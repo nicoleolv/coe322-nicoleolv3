@@ -1,4 +1,4 @@
-lude <iostream>
+include <iostream>
 
 using namespace std;
 using std::cout;
@@ -24,6 +24,7 @@ int main(){
 
   int sequence = cc(n);
   cout << n << '\n';
+
 
   return 0;
 
