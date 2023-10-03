@@ -1,0 +1,3 @@
+echo My user name is: $( whoami )
+My home directory is $( pwd )
+I made this script on: $( hostname )
