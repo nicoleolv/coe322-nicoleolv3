@@ -20,7 +20,7 @@ int cc(int n){
   }
   return sequence;
 }
-
+emac
 int main(){
 
   int maxlength = 0;
@@ -28,8 +28,8 @@ int main(){
 
   for (int i = 1; i <= 1000; i++){
     int sequence = cc(i);
-    if (sequence > maxlength){
-      maxlength = sequence;
+    if (sequence > maxLength){
+      maxLength = sequence;
       startingnum = i;
     }
   }

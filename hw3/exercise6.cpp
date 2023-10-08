@@ -1,29 +1,39 @@
+// Nicole Olvera
+// username: nicoleolv
+// uteid: no4342
+
 #include <iostream>
+#include <vector>
 
 using namespace std;
-using std::cout;
 
-int cc(int n){
-  int sequence = 0;
-
-  while (n != 1){
-    if (n % 2 == 0){
-      n = n / 2;
-    } else{
-      n = 3 * n + 1;
+void sorter( const vector<int> &initialvec, vector<int> &oddvec, vector<int> &evenvec ){
+  for (int num : initialvec){
+    if (num % 2 == 0){
+      evenvec.push_back(num);
+    } else {
+      oddvec.push_back(num);
     }
-    sequence++;
   }
-  return sequence;
-  return n;
 }
-int main(){
-  int n;
-  cout << "Enter a pocitive number between from 1 to 1000: ";
-  cin >> n;
 
-  int sequence = cc(n);
-  cout << n << '\n';
+
+int main(){
+  vector<int> initialvec = {5, 6, 2, 4, 5};
+  vector<int> oddvec;
+  vector<int> evenvec;
+
+  sorter(initialvec, oddvec, evenvec);
+
+  cout << "Odd vector: " << endl;
+  for (int num : oddvec){
+    cout << num << " " << '\n';
+  }
+ 
+  cout << "Even vector: " << endl;
+  for (int num : evenvec){
+    cout << num << " " << '\n';
+  }
 
   return 0;
 
